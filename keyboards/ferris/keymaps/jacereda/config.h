@@ -1,8 +1,3 @@
+#include "jacereda-config.h"
 #define SPLIT_USB_DETECT
 #define RP2040_FLASH_GENERIC_03H
-
-#define TAP_CODE_DELAY 40
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
-#define QUICK_TAP_TERM 120
-#define PERMISSIVE_HOLD
-#define COMBO_TERM 25
