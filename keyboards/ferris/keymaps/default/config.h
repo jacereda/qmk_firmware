@@ -16,7 +16,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-// Set the mouse settings to a comfortable speed/accuracy trade-off,
+
+#ifdef __avr__
+#    define SPLIT_USB_DETECT
+#endif
+#define RP2040_FLASH_GENERIC_03H
+
+// SET the mouse settings to a comfortable speed/accuracy trade-off,
 // assuming a screen refresh rate of 60 Htz or higher
 // The default is 50. This makes the mouse ~3 times faster and more accurate
 #define MOUSEKEY_INTERVAL 16
