@@ -16,6 +16,9 @@ const uint16_t PROGMEM eql_combo[] = {KC_T, KC_N, COMBO_END};
 const uint16_t PROGMEM ent_combo[] = {KC_H, KC_T, KC_N, COMBO_END};
 const uint16_t PROGMEM ent2_combo[] = {KC_H, KC_T, KC_N, KC_S, COMBO_END};
 
+const uint16_t PROGMEM ent3_combo[] = {LCTL_T(KC_J), KC_M, COMBO_END};
+const uint16_t PROGMEM tab_combo[] = {RCTL_T(KC_W), KC_I, COMBO_END};
+
 combo_t key_combos[] = {
     COMBO(resetl_combo, QK_REBOOT),
     COMBO(bootloaderl_combo, QK_BOOTLOADER),
@@ -32,4 +35,7 @@ combo_t key_combos[] = {
     COMBO(mins_combo, KC_MINS),
     COMBO(ent_combo, KC_ENT),
     COMBO(ent2_combo, KC_ENT),
+
+    COMBO(ent3_combo, KC_ENT),
+    COMBO(tab_combo, KC_ENT),
 };
